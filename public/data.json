@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Starter Resume Kit",
+        "description": "Perfect for beginners to create professional resumes بسهولة.",
+        "price": 9,
+        "period": "one-time",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "20+ templates",
+            "Basic customization",
+            "Export to PDF"
+        ],
+        "icon": "FileText"
+    },
+    {
+        "id": 2,
+        "name": "Pro Resume Builder",
+        "description": "Advanced resume builder with ATS-friendly designs.",
+        "price": 19,
+        "period": "one-time",
+        "tag": "best seller",
+        "tagType": "best",
+        "features": [
+            "100+ templates",
+            "ATS optimization",
+            "Export to PDF & Word"
+        ],
+        "icon": "Award"
+    },
+    {
+        "id": 3,
+        "name": "Career Booster Plan",
+        "description": "Monthly plan with resume and cover letter tools.",
+        "price": 5,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Unlimited resumes",
+            "Cover letter builder",
+            "Cloud save"
+        ],
+        "icon": "TrendingUp"
+    },
+    {
+        "id": 4,
+        "name": "Job Hunter Pack",
+        "description": "All-in-one toolkit for job seekers.",
+        "price": 49,
+        "period": "one-time",
+        "tag": "best seller",
+        "tagType": "best",
+        "features": [
+            "Resume + Cover Letter",
+            "LinkedIn optimization",
+            "Interview tips"
+        ],
+        "icon": "Briefcase"
+    },
+    {
+        "id": 5,
+        "name": "Premium Career Suite",
+        "description": "Complete yearly subscription for professionals.",
+        "price": 59,
+        "period": "yearly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Unlimited templates",
+            "AI suggestions",
+            "Priority support"
+        ],
+        "icon": "Crown"
+    },
+    {
+        "id": 6,
+        "name": "Student Resume Pack",
+        "description": "Designed for students and fresh graduates.",
+        "price": 7,
+        "period": "one-time",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "Entry-level templates",
+            "Simple editor",
+            "Download PDF"
+        ],
+        "icon": "GraduationCap"
+    },
+    {
+        "id": 7,
+        "name": "Freelancer Profile Kit",
+        "description": "Build stunning profiles for freelance platforms.",
+        "price": 12,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Portfolio templates",
+            "Bio generator",
+            "Profile analytics"
+        ],
+        "icon": "User"
+    },
+    {
+        "id": 8,
+        "name": "Executive Resume Pro",
+        "description": "High-end resumes for senior professionals.",
+        "price": 79,
+        "period": "one-time",
+        "tag": "best seller",
+        "tagType": "best",
+        "features": [
+            "Executive templates",
+            "Personal branding",
+            "1-click export"
+        ],
+        "icon": "Star"
+    }
+]
