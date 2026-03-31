@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Card = ({ sellar }) => {
+const Card = ({ sellar, selectedSellar ,setSelectedSellar }) => {
+    const [isSelected, isSetSelected] = useState(false)
+
+    const hendelBuyBtn = () => {
+
+
+        isSetSelected(true)
+        setSelectedSellar([...selectedSellar, sellar])
+    }
+
     return (
         <div className="w-[340px] p-6 border border-[#F2F2F2] rounded-lg shadow-md space-y-4 relative">
             {sellar.tag && (
@@ -52,7 +61,7 @@ const Card = ({ sellar }) => {
                     </li>
                 ))}
             </ul>
-            <button className="w-full py-3 bg-gradient-to-r from-purple-600 to-purple-400 text-white font-semibold rounded-md hover:from-purple-700 hover:to-purple-500 transition">
+            <button onClick={hendelBuyBtn} className="w-full py-3 bg-gradient-to-r from-purple-600 to-purple-400 text-white font-semibold rounded-md hover:from-purple-700 hover:to-purple-500 transition">
                 Buy Now
             </button>
         </div>
