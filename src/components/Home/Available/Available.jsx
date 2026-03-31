@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import Sellar from '../Sellar/Sellar';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
+const Sellar = lazy(() => import('../Sellar/Sellar'));
 import Cart from '../Cart/Cart';
 
-const Available = ({ sellarPromies }) => {
+const Available = ({ sellarPromies, setSelectedSellar, selectedSellar }) => {
     const [sellar, setSellar] = useState([]);
 
     useEffect(() => {
@@ -13,7 +13,7 @@ const Available = ({ sellarPromies }) => {
 
     const [selectType, setSelectType] = useState("available")
     // console.log(selectType)
-    const [selectedSellar, setSelectedSellar] = useState([]);
+
     return (
         <>
             <div className='my-[120px]'>
@@ -36,9 +36,18 @@ const Available = ({ sellarPromies }) => {
 
                     </div>
                 </div>
-                {
-                    selectType === "available" ? (<Sellar sellar={sellar} selectedSellar={selectedSellar} setSelectedSellar={setSelectedSellar}/>) : (<Cart selectedSellar={selectedSellar} setSelectedSellar={setSelectedSellar}/>)
-                }
+                {selectType === "available" ? (
+                    <Suspense
+                        fallback={
+                            <div className="flex justify-center items-center py-10">
+                                <span className="loading loading-dots loading-xl"></span>
+                            </div>
+                        }>
+                        <Sellar sellar={sellar} selectedSellar={selectedSellar} setSelectedSellar={setSelectedSellar} />
+                    </Suspense>
+                ) : (
+                    <Cart selectedSellar={selectedSellar} setSelectedSellar={setSelectedSellar} />
+                )}
 
             </div>
         </>

@@ -18,7 +18,7 @@
   {
     "id": 2,
     "name": "Pro Resume Builder",
-    "description": "Advanced resume builder with ATS‑friendly designs.",
+    "description": "Advanced resume builder with ATS-friendly designs.",
     "price": 19,
     "period": "one-time",
     "tag": "best seller",
@@ -50,9 +50,9 @@
   {
     "id": 4,
     "name": "Job Hunter Pack",
-    "description": "All‑in‑one toolkit for job seekers.",
+    "description": "All-i-one toolkit for job seekers.",
     "price": 49,
-    "period": "one‑time",
+    "period": "one-time",
     "tag": "best seller",
     "tagType": "best",
     "features": [
@@ -84,11 +84,11 @@
     "name": "Student Resume Pack",
     "description": "Designed for students and fresh graduates.",
     "price": 7,
-    "period": "one‑time",
+    "period": "one-time",
     "tag": "new",
     "tagType": "new",
     "features": [
-      "Entry‑level templates",
+      "Entry-level templates",
       "Simple editor",
       "Download PDF"
     ],
@@ -114,15 +114,15 @@
   {
     "id": 8,
     "name": "Executive Resume Pro",
-    "description": "High‑end resumes for senior professionals.",
+    "description": "High-end resumes for senior professionals.",
     "price": 79,
-    "period": "one‑time",
+    "period": "one-time",
     "tag": "best seller",
     "tagType": "best",
     "features": [
       "Executive templates",
       "Personal branding",
-      "1‑click export"
+      "1-click export"
     ],
     "icon": "Star",
     "image":  "../src/assets/products/social-media.png"

@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { IoCartOutline } from 'react-icons/io5'
 
-export class Navbar extends Component {
-    render() {
+const Navbar = ({selectedSellar}) =>  {
         return (
             <>
                 <div className="navbar bg-base-100 shadow-sm">
@@ -26,8 +25,16 @@ export class Navbar extends Component {
                         </div>
 
 
-                        <div className="flex gap-3 items-center">
-                            <p><IoCartOutline/></p>
+                        <div className="flex gap-5 items-center">
+                            <div className="relative inline-block">
+                                <IoCartOutline size={30} />
+
+                                {selectedSellar.length > 0 && (
+                                    <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                                        {selectedSellar.length}
+                                    </span>
+                                )}
+                            </div>
                             <p>Login</p>
                             <button className="btn pb-1 font-semibold rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white hover:opacity-90 transition">
                                 Get Started
@@ -37,7 +44,7 @@ export class Navbar extends Component {
                 </div>
             </>
         )
-    }
+    
 }
 
 export default Navbar

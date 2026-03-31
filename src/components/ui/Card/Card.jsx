@@ -39,7 +39,9 @@ const Card = ({ sellar, selectedSellar, setSelectedSellar }) => {
                         ? "/Mo"
                         : sellar.period === "yearly"
                             ? "/Yr"
-                            : ""}
+                            : sellar.period === "one-time"
+                                ? "/OT"
+                                : ""}
                 </span>
             </p>
             <ul className="space-y-1 text-gray-700">
@@ -59,9 +61,11 @@ const Card = ({ sellar, selectedSellar, setSelectedSellar }) => {
                     </li>
                 ))}
             </ul>
-            <button onClick={hendelBuyBtn}
-                className={`w-full py-3 ${isSelected === true ? 'bg-gradient-to-r from-green-500 to-green-600' : "bg-gradient-to-r from-purple-600 to-purple-400" } text-white font-semibold rounded-md `}>
-                {isSelected === true ? 'Added to Cart !' : 'Buy Now'}
+            <button
+                onClick={hendelBuyBtn}
+                className={`w-full py-3 ${isSelected === true ? 'bg-gradient-to-r from-green-500 to-green-600' : "bg-gradient-to-r from-purple-600 to-purple-400"} text-white font-semibold rounded-md `}
+                disabled={isSelected ? true : false}>
+                {isSelected ? 'Added to Cart !' : 'Buy Now'}
             </button>
         </div>
 

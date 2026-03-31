@@ -12,7 +12,7 @@ const Cart = ({ selectedSellar, setSelectedSellar }) => {
     };
     return (
         <>
-            <div className='container mx-auto p-6 bg-white rounded-lg shadow-md max-w-[1120px]'>
+            <div className='container mx-auto p-6 border-2 border-[#F2F2F2]  rounded-lg  w-[1120px]'>
                 <h2 className="text-xl font-semibold mb-4">Your Cart</h2>
                 <div className='space-y-4'>
                     {
@@ -22,7 +22,7 @@ const Cart = ({ selectedSellar, setSelectedSellar }) => {
                                 <div
                                     className="flex items-center justify-between py-5 px-3 bg-[#F9FAFC] rounded-lg">
                                     <div className="flex items-center space-x-3">
-                                        <div className=' bg-white border-1 border-[#F2F2F2] rounded-full p-2'>
+                                        <div className=' bg-white border-1 border-[#F2F2F2] rounded-full p-3'>
                                             <img
                                                 src={sellar.image}
                                                 alt={sellar.name}
@@ -47,21 +47,24 @@ const Cart = ({ selectedSellar, setSelectedSellar }) => {
                     }
                 </div>
 
-            </div>
-            <div>
-                <div className="flex mx-auto items-center justify-between my-5 w-[1120px]">
-                    <span className="font-semibold">Total:</span>
-                    <span className="text-xl font-bold">${totalPrice}</span>
-                </div>
 
-                <div className=' flex mx-auto w-[1120px]'>
-                    <button
-                        onClick={clearCart}
-                        className="w-full py-3 bg-gradient-to-r from-purple-600 to-purple-400 text-white rounded-full font-semibold hover:opacity-90 transition">
-                        Proceed To Checkout
-                    </button>
-                </div>
-            </div >
+
+                <div>
+                    <div className="flex mx-auto items-center justify-between my-5 w-full">
+                        <span className="font-semibold">Total:</span>
+                        <span className="text-xl font-bold">${totalPrice}</span>
+                    </div>
+
+                    <div className=' flex mx-auto w-full'>
+                        <button
+                            onClick={clearCart}
+                            className="w-full py-3 bg-gradient-to-r from-purple-600 to-purple-400 text-white rounded-full font-semibold hover:opacity-90 transition">
+                            Proceed To Checkout
+                        </button>
+                    </div>
+                </div >
+            </div>
+
         </>
     );
 };
