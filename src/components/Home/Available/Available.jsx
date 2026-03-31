@@ -37,7 +37,7 @@ const Available = ({ sellarPromies }) => {
                     </div>
                 </div>
                 {
-                    selectType === "available" ? (<Sellar sellar={sellar} selectedSellar={selectedSellar} setSelectedSellar={setSelectedSellar}/>) : (<Cart selectedSellar={selectedSellar}/>)
+                    selectType === "available" ? (<Sellar sellar={sellar} selectedSellar={selectedSellar} setSelectedSellar={setSelectedSellar}/>) : (<Cart selectedSellar={selectedSellar} setSelectedSellar={setSelectedSellar}/>)
                 }
 
             </div>

@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 
-const Card = ({ sellar, selectedSellar ,setSelectedSellar }) => {
+const Card = ({ sellar, selectedSellar, setSelectedSellar }) => {
     const [isSelected, isSetSelected] = useState(false)
 
     const hendelBuyBtn = () => {
-
-
         isSetSelected(true)
         setSelectedSellar([...selectedSellar, sellar])
     }
@@ -61,8 +59,9 @@ const Card = ({ sellar, selectedSellar ,setSelectedSellar }) => {
                     </li>
                 ))}
             </ul>
-            <button onClick={hendelBuyBtn} className="w-full py-3 bg-gradient-to-r from-purple-600 to-purple-400 text-white font-semibold rounded-md hover:from-purple-700 hover:to-purple-500 transition">
-                Buy Now
+            <button onClick={hendelBuyBtn}
+                className={`w-full py-3 ${isSelected === true ? 'bg-gradient-to-r from-green-500 to-green-600' : "bg-gradient-to-r from-purple-600 to-purple-400" } text-white font-semibold rounded-md `}>
+                {isSelected === true ? 'Added to Cart !' : 'Buy Now'}
             </button>
         </div>
 
