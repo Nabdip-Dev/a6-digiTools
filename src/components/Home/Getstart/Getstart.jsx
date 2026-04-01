@@ -14,7 +14,7 @@ const Getstart = () => {
                         Start using premium digital tools in minutes, not hours.
                     </p>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-full sm:max-w-2xl lg:max-w-4xl mx-auto">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-full sm:max-w-2xl lg:max-w-4xl mx-auto ">
                         {/* Step 1 */}
                         <div className="bg-white rounded-lg p-8 shadow-sm relative">
                             <div className="absolute top-4 right-4 bg-purple-600 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center">
@@ -80,7 +80,7 @@ const Getstart = () => {
             </section>
 
             {/* Pricing Section */}
-            <section className="py-16 bg-gray-100">
+            <section className=" py-16 bg-gray-100">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl font-bold text-gray-800">
                         Simple, Transparent Pricing
@@ -90,9 +90,9 @@ const Getstart = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-full sm:max-w-3xl lg:max-w-6xl mx-auto px-4 sm:px-6">
+                <div className="items-center justify-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto px-4 sm:px-6">
                     {/* Starter */}
-                    <div className="bg-[#F9FAFC] border border-[#F2F2F2] rounded-xl p-6 shadow-sm">
+                    <div className="w-[320px] bg-[#F9FAFC] border border-[#F2F2F2] rounded-xl p-6 shadow-sm">
                         <h3 className="text-xl font-semibold">Starter</h3>
                         <p className="text-gray-500 text-sm mb-4">
                             Perfect for getting started
@@ -106,13 +106,13 @@ const Getstart = () => {
                             <li>✔ Community support</li>
                             <li>✔ 1 project per month</li>
                         </ul>
-                        <button className="mt-6 w-full py-2 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 text-white">
+                        <button className="mt-22 w-full py-2 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 text-white">
                             Get Started Free
                         </button>
                     </div>
 
                     {/* Pro */}
-                    <div className="relative rounded-xl p-6 shadow-lg bg-gradient-to-b from-purple-600 to-indigo-600 text-white">
+                    <div className="w-[320px] relative rounded-xl p-6 shadow-lg bg-gradient-to-b from-purple-600 to-indigo-600 text-white">
                         <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-300 text-black text-xs px-3 py-1 rounded-full">
                             Most Popular
                         </span>
@@ -135,7 +135,7 @@ const Getstart = () => {
                     </div>
 
                     {/* Enterprise */}
-                    <div className="bg-[#F9FAFC] border border-[#F2F2F2] rounded-xl p-6 shadow-sm">
+                    <div className="w-[320px] bg-[#F9FAFC] border border-[#F2F2F2] rounded-xl p-6 shadow-sm">
                         <h3 className="text-xl font-semibold">Enterprise</h3>
                         <p className="text-gray-500 text-sm mb-4">For teams and businesses</p>
                         <h2 className="text-3xl font-bold">
@@ -181,13 +181,14 @@ const Getstart = () => {
             {/* Footer */}
             <section className="bg-[#0B0F19] text-gray-300 pt-16 pb-8">
                 <div className="max-w-full sm:max-w-4xl lg:max-w-6xl mx-auto px-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 justify-items-center lg:justify-items-start text-center lg:text-start">
                         {/* Logo + Description */}
                         <div>
-                            <h2 className="text-2xl font-bold text-white mb-4">YourLogo</h2>
+                            <h1 className="text-2xl font-bold bg-gradient-to-r from-[#988cf2] to-[#d000ff] bg-clip-text text-transparent">
+                                DigiTools
+                            </h1>
                             <p className="text-sm leading-6 mb-6">
-                                Build modern workflow and manage your team with powerful tools.
-                                Join thousands of professionals using our platform every day.
+                                Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.
                             </p>
                         </div>
 
@@ -197,8 +198,8 @@ const Getstart = () => {
                             <ul className="space-y-2 text-sm">
                                 <li className="hover:text-white cursor-pointer">Features</li>
                                 <li className="hover:text-white cursor-pointer">Pricing</li>
+                                <li className="hover:text-white cursor-pointer">Templates</li>
                                 <li className="hover:text-white cursor-pointer">Integrations</li>
-                                <li className="hover:text-white cursor-pointer">Updates</li>
                             </ul>
                         </div>
 
@@ -207,20 +208,20 @@ const Getstart = () => {
                             <h3 className="text-white font-semibold mb-4">Company</h3>
                             <ul className="space-y-2 text-sm">
                                 <li className="hover:text-white cursor-pointer">About</li>
-                                <li className="hover:text-white cursor-pointer">Careers</li>
                                 <li className="hover:text-white cursor-pointer">Blog</li>
-                                <li className="hover:text-white cursor-pointer">Contact</li>
+                                <li className="hover:text-white cursor-pointer">Careers</li>
+                                <li className="hover:text-white cursor-pointer">Press</li>
                             </ul>
                         </div>
 
                         {/* Support */}
                         <div>
-                            <h3 className="text-white font-semibold mb-4">Support</h3>
+                            <h3 className="text-white font-semibold mb-4">Resources</h3>
                             <ul className="space-y-2 text-sm">
+                                <li className="hover:text-white cursor-pointer">Documentation</li>
                                 <li className="hover:text-white cursor-pointer">Help Center</li>
-                                <li className="hover:text-white cursor-pointer">Terms</li>
-                                <li className="hover:text-white cursor-pointer">Privacy</li>
-                                <li className="hover:text-white cursor-pointer">Status</li>
+                                <li className="hover:text-white cursor-pointer">Community</li>
+                                <li className="hover:text-white cursor-pointer">Contact</li>
                             </ul>
                         </div>
 
