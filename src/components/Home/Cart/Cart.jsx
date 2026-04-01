@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Cart = ({ selectedSellar, setSelectedSellar }) => {
     console.log(selectedSellar)
@@ -8,7 +9,8 @@ const Cart = ({ selectedSellar, setSelectedSellar }) => {
         setSelectedSellar(filterPlayers);
     }
     const clearCart = () => {
-        setSelectedSellar([]);  // খালি অ্যারে সেট করলো, কার্ট ক্লিয়ার হবে
+        setSelectedSellar([]);
+        toast.warning(`Clear from Cart!`);
     };
     return (
         <>
@@ -16,34 +18,45 @@ const Cart = ({ selectedSellar, setSelectedSellar }) => {
                 <h2 className="text-xl font-semibold mb-4">Your Cart</h2>
                 <div className='space-y-4'>
                     {
-                        selectedSellar.map(sellar => {
-                            return (
+                        selectedSellar.length === 0 ?
+                            <div className="text-center py-20">
+                                <h2 className="text-2xl font-semibold mb-2">You have no products in your cart</h2>
+                                <h4 className="text-gray-500">
+                                    Go to the product tab and buy some products
+                                </h4>
+                            </div>
+                            : selectedSellar.map(sellar => {
+                                return (
 
-                                <div
-                                    className="flex items-center justify-between py-5 px-3 bg-[#F9FAFC] rounded-lg">
-                                    <div className="flex items-center space-x-3">
-                                        <div className=' bg-white border-1 border-[#F2F2F2] rounded-full p-3'>
-                                            <img
-                                                src={sellar.image}
-                                                alt={sellar.name}
-                                                className="w-10 h-10 rounded"
-                                            />
+                                    <div
+                                        className="flex items-center justify-between py-5 px-3 bg-[#F9FAFC] rounded-lg">
+                                        <div className="flex items-center space-x-3">
+                                            <div className=' bg-white border-1 border-[#F2F2F2] rounded-full p-3'>
+                                                <img
+                                                    src={sellar.image}
+                                                    alt={sellar.name}
+                                                    className="w-10 h-10 rounded"
+                                                />
+                                            </div>
+                                            <div>
+                                                <p className="font-semibold text-xl">{sellar.name}</p>
+                                                <p className="text-gray-500">${sellar.price}</p>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <p className="font-semibold text-xl">{sellar.name}</p>
-                                            <p className="text-gray-500">${sellar.price}</p>
-                                        </div>
+
+                                        <button
+                                            className="text-pink-500 hover:underline text-sm font-medium"
+                                            onClick={() => {
+                                                onRemove(sellar);
+                                                toast.warning(`${sellar.name} removed from Cart!`);
+                                            }}
+                                        >
+                                            Remove
+                                        </button>
                                     </div>
 
-                                    <button
-                                        className="text-pink-500 hover:underline text-sm font-medium"
-                                        onClick={() => onRemove(sellar)} >
-                                        Remove
-                                    </button>
-                                </div>
-
-                            )
-                        })
+                                )
+                            })
                     }
                 </div>
 

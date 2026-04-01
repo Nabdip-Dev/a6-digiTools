@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-
+import { FaCheck } from "react-icons/fa";
+import { toast } from 'react-toastify';
 const Card = ({ sellar, selectedSellar, setSelectedSellar }) => {
     const [isSelected, isSetSelected] = useState(false)
 
     const hendelBuyBtn = () => {
         isSetSelected(true)
         setSelectedSellar([...selectedSellar, sellar])
+        toast.success(`${sellar.name}  Added to Cart!`)
     }
 
     return (
@@ -65,7 +67,13 @@ const Card = ({ sellar, selectedSellar, setSelectedSellar }) => {
                 onClick={hendelBuyBtn}
                 className={`btn w-full py-3 ${isSelected === true ? 'bg-gradient-to-r from-green-500 to-green-600' : "bg-gradient-to-r from-purple-600 to-purple-400"} text-white font-semibold rounded-md `}
                 disabled={isSelected ? true : false}>
-                {isSelected ? 'Added to Cart !' : 'Buy Now'}
+                {isSelected ? (
+                    <>
+                        <FaCheck className="inline mr-2" /> Added to Cart!
+                    </>
+                ) : (
+                    'Buy Now'
+                )}
             </button>
         </div>
 

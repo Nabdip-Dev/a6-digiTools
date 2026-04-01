@@ -1,6 +1,5 @@
 import React from 'react';
 import { CiPlay1 } from 'react-icons/ci';
-import { FaRegCircleDot } from 'react-icons/fa6';
 import bannerImg from '../../../../public/assets/banner.png'
 import cerImg from '../../../../public/assets/Group 5.png'
 

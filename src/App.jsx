@@ -5,6 +5,7 @@ import Available from './components/Home/Available/Available'
 import Bannar from './components/Home/Bannar/Bannar'
 import Navbar from './components/Navbar/Navbar'
 import Getstart from './components/Home/Getstart/Getstart';
+import { ToastContainer } from 'react-toastify';
 const fetchSellar = async () => {
   const res = await fetch("/data.json");
   return res.json();
@@ -24,6 +25,7 @@ function App() {
         <Available sellarPromies={sellarPromies} selectedSellar={selectedSellar} setSelectedSellar={setSelectedSellar} />
       </Suspense>
       <Getstart />
+      <ToastContainer position="top-center" />
     </>
   )
 }
