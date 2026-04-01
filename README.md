@@ -4,23 +4,27 @@
 
 **A fully functional e-commerce demo web application** where users can browse products, add them to the cart, and manage their selections easily. Everything is interactive and fully responsive for all devices.
 
-[🌐 Live Demo](https://transcendent-alfajores-5eb958.netlify.app/)
+[🌐 Live Demo](https://digitools-nabdip-dev.netlify.app/)
 
 ---
 
-## 🖼️ Web Gallery
-
+## 📸 Project Preview
 A showcase of different parts of the website:
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+### 🛍️ Product Page
+<img src="./public/assets/web-img/product.png" width="600"/>
 
-<img src="./public/assets/web-img/product.png" alt="Product Screenshot" width="250" /> 
-<img src="./public/assets/web-img/cart.png" alt="Cart Screenshot" width="250" /> 
-<img src="./public/assets/web-img/step.png" alt="Steps Screenshot" width="250" /> 
-<img src="./public/assets/web-img/subsrition.png" alt="Subscription Screenshot" width="250" /> 
-<img src="./public/assets/web-img/footer.png" alt="Footer Screenshot" width="250" />
+### 🛒 Cart Page
+<img src="./public/assets/web-img/cart.png" width="600"/>
 
-</div>
+### ⚙️ Steps Page
+<img src="./public/assets/web-img/step.png" width="600"/>
+
+### 💳 Subscription Page
+<img src="./public/assets/web-img/subsrition.png" width="600"/>
+
+### 📌 Footer
+<img src="./public/assets/web-img/footer.png" width="600"/>
 
 *Images are scaled for better visibility and layout.*
 
@@ -48,7 +52,7 @@ A showcase of different parts of the website:
 To run this project locally:
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/Nabdip-Dev/a6-digiTools.git
 cd your-repo-name
 npm install
 npm start
