@@ -18,7 +18,7 @@ const Available = ({ sellarPromies, setSelectedSellar, selectedSellar }) => {
         <>
             <div className='my-[120px]'>
                 <div className='flex flex-col justify-center items-center space-y-3 mb-10'>
-                    <h1 className='font-semibold text-[48px] text-center'>Premium Digital Tools</h1>
+                    <h1 className='font-semibold text-[33px] md:text-[48px] text-center'>Premium Digital Tools</h1>
                     <p className=' text-[#627382] text-center'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
                     <div className='border border-[#F6F6F6] rounded-full p-0.5'>
 

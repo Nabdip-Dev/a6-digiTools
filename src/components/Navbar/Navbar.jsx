@@ -14,7 +14,7 @@ const Navbar = ({selectedSellar}) =>  {
                         </div>
 
 
-                        <div>
+                        <div className='hidden lg:block'>
                             <ul className="flex gap-5">
                                 <li className='text-[#101727]'>Products</li>
                                 <li className='text-[#101727]'>Features</li>

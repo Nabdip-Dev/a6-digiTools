@@ -13,7 +13,7 @@
       "Export to PDF"
     ],
     "icon": "FileText",
-    "image": "../src/assets/products/writing_2327400 1.png"
+    "image": "/assets/products/writing_2327400 1.png"
   },
   {
     "id": 2,
@@ -29,7 +29,7 @@
       "Export to PDF & Word"
     ],
     "icon": "Award",
-    "image": "../src/assets/products/social-media.png"
+    "image": "/assets/products/social-media.png"
   },
   {
     "id": 3,
@@ -45,12 +45,12 @@
       "Cloud save"
     ],
     "icon": "TrendingUp",
-    "image": "../src/assets/products/shopping-cart.png"
+    "image": "/assets/products/shopping-cart.png"
   },
   {
     "id": 4,
     "name": "Job Hunter Pack",
-    "description": "All-i-one toolkit for job seekers.",
+    "description": "All-in-one toolkit for job seekers.",
     "price": 49,
     "period": "one-time",
     "tag": "best seller",
@@ -61,7 +61,7 @@
       "Interview tips"
     ],
     "icon": "Briefcase",
-    "image": "../src/assets/products/portfolio.png"
+    "image": "/assets/products/portfolio.png"
   },
   {
     "id": 5,
@@ -70,14 +70,14 @@
     "price": 59,
     "period": "yearly",
     "tag": "popular",
-  "tagType": "popular",
+    "tagType": "popular",
     "features": [
       "Unlimited templates",
       "AI suggestions",
       "Priority support"
     ],
     "icon": "Crown",
-    "image": "../src/assets/products/operation.png"
+    "image": "/assets/products/operation.png"
   },
   {
     "id": 6,
@@ -93,7 +93,7 @@
       "Download PDF"
     ],
     "icon": "GraduationCap",
-    "image": "../src/assets/products/design-tool.png"
+    "image": "/assets/products/design-tool.png"
   },
   {
     "id": 7,
@@ -109,7 +109,7 @@
       "Profile analytics"
     ],
     "icon": "User",
-    "image": "../src/assets/products/writing_2327400 1.png"
+    "image": "/assets/products/writing_2327400 1.png"
   },
   {
     "id": 8,
@@ -125,6 +125,6 @@
       "1-click export"
     ],
     "icon": "Star",
-    "image":  "../src/assets/products/social-media.png"
+    "image": "/assets/products/social-media.png"
   }
 ]

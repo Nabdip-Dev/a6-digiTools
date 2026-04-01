@@ -12,7 +12,7 @@ const Cart = ({ selectedSellar, setSelectedSellar }) => {
     };
     return (
         <>
-            <div className='container mx-auto p-6 border-2 border-[#F2F2F2]  rounded-lg  w-[1120px]'>
+            <div className='container mx-auto p-6 border-2 border-[#F2F2F2]  rounded-lg w-[390px]  md:w-[770px] lg:w-[1120px]'>
                 <h2 className="text-xl font-semibold mb-4">Your Cart</h2>
                 <div className='space-y-4'>
                     {

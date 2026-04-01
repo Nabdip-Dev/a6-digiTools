@@ -63,7 +63,7 @@ const Card = ({ sellar, selectedSellar, setSelectedSellar }) => {
             </ul>
             <button
                 onClick={hendelBuyBtn}
-                className={`w-full py-3 ${isSelected === true ? 'bg-gradient-to-r from-green-500 to-green-600' : "bg-gradient-to-r from-purple-600 to-purple-400"} text-white font-semibold rounded-md `}
+                className={`btn w-full py-3 ${isSelected === true ? 'bg-gradient-to-r from-green-500 to-green-600' : "bg-gradient-to-r from-purple-600 to-purple-400"} text-white font-semibold rounded-md `}
                 disabled={isSelected ? true : false}>
                 {isSelected ? 'Added to Cart !' : 'Buy Now'}
             </button>
